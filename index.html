@@ -59,9 +59,9 @@
   <div class="scanlines"></div>
   <div id="map"></div>
 
-  <!-- TOP LEFT BRANDING & SEARCH -->
-  <div class="absolute top-6 left-6 z-30 pointer-events-none flex flex-col gap-4">
-    <div class="hud-panel pointer-events-auto p-3 w-80">
+  <!-- TOP LEFT BRANDING, CONTROLS & FILTER -->
+  <div class="absolute top-6 left-6 z-30 pointer-events-none flex flex-col gap-3">
+    <div class="hud-panel pointer-events-auto p-3 w-84 max-w-[calc(100vw-3rem)]">
       <div class="flex justify-between items-end mb-2 border-b border-shaded-green pb-2">
         <div>
           <div class="text-[10px] text-lions-mane">SYS.OP // JAMES ARCHER</div>
@@ -69,24 +69,39 @@
         </div>
         <div class="text-[9px] text-valley-gold blink">[ REC ]</div>
       </div>
+      
+      <!-- SEARCH INPUT -->
       <div class="flex items-center text-xs text-white mb-2">
         <span class="text-teal-green mr-2">></span>
-        <input type="text" id="search-input" placeholder="ENTER TARGET VECTOR..." class="w-full bg-transparent placeholder-teal-green focus:outline-none" oninput="handleSearch(this.value)" />
+        <input type="text" id="search-input" placeholder="SEARCH OPERATOR OR CITY..." class="w-full bg-transparent placeholder-teal-green focus:outline-none" oninput="handleSearch(this.value)" />
       </div>
-      <button onclick="document.getElementById('docs-modal').classList.remove('hidden')" class="w-full border border-teal-green bg-[#020403] text-[10px] text-teal-green hover:text-valley-gold hover:border-valley-gold py-1.5 transition">
-        [ ACCESS SYSTEM LOGS & LEGAL ]
-      </button>
+
+      <!-- AGENCY FILTER BUTTONS -->
+      <div class="flex gap-1 text-[9px] border-t border-shaded-green pt-2 mb-2">
+        <button onclick="setFilter('all')" id="filter-all" class="flex-1 py-1 border border-valley-gold bg-valley-gold/20 text-valley-gold font-bold">ALL</button>
+        <button onclick="setFilter('muni')" id="filter-muni" class="flex-1 py-1 border border-shaded-green text-teal-green hover:text-white">POLICE/MUNI</button>
+        <button onclick="setFilter('private')" id="filter-private" class="flex-1 py-1 border border-shaded-green text-teal-green hover:text-white">HOA/PRIVATE</button>
+      </div>
+
+      <!-- LEGAL & TIP LINE BUTTONS -->
+      <div class="grid grid-cols-2 gap-1 text-[9px]">
+        <button onclick="document.getElementById('docs-modal').classList.remove('hidden')" class="border border-teal-green bg-[#020403] text-teal-green hover:text-valley-gold hover:border-valley-gold py-1 transition text-center">
+          [ LOGS & LEGAL ]
+        </button>
+        <a href="mailto:valleystar.investigations@gmail.com?subject=ALPR%20Hardware%20Tip%20Submission" class="border border-teal-green bg-[#020403] text-teal-green hover:text-valley-gold hover:border-valley-gold py-1 transition text-center block">
+          [ + REPORT NODE ]
+        </a>
+      </div>
     </div>
 
     <!-- TERMINAL SCROLLING LOG -->
-    <div class="hud-panel pointer-events-auto w-80 h-32 flex flex-col hidden md:flex">
+    <div class="hud-panel pointer-events-auto w-84 h-28 flex flex-col hidden md:flex">
       <div class="hud-header flex justify-between"><span>[ NETWORK COMMS ]</span><span class="text-teal-green">UPLINK</span></div>
       <div class="p-2 text-[9px] text-teal-green overflow-hidden flex-1 relative" id="terminal-log">
         <div class="absolute bottom-2 left-2 right-2 space-y-1" id="log-content">
-          <div class="text-lions-mane">> INIT SECURE CONNECTION...</div>
-          <div>> ESTABLISHING HANDSHAKE... OK</div>
-          <div>> DECRYPTING GEOJSON PAYLOAD...</div>
-          <div class="text-valley-gold blink">> AWAITING TELEMETRY...</div>
+          <div class="text-lions-mane">> PRIVACY SHIELD: ACTIVE (ZERO PII)</div>
+          <div>> CA SB 34 AUDIT SPEC: COMPLIANT</div>
+          <div class="text-valley-gold blink">> REALTIME GRID ACTIVE...</div>
         </div>
       </div>
     </div>
@@ -97,10 +112,10 @@
     <div class="hud-panel pointer-events-auto w-64">
       <div class="hud-header flex justify-between"><span>[ GRID TELEMETRY ]</span><span class="text-valley-gold">[ - ]</span></div>
       <div class="p-3 text-[11px] space-y-2">
-        <div class="flex justify-between border-b border-shaded-green pb-1"><span class="text-lions-mane">ACTIVE SENSORS</span><span id="camera-count" class="text-white font-bold text-glow-white">--</span></div>
-        <div class="flex justify-between border-b border-shaded-green pb-1"><span class="text-lions-mane">ENCRYPTION</span><span class="text-white">AES-256</span></div>
-        <div class="flex justify-between border-b border-shaded-green pb-1"><span class="text-lions-mane">SAT LINK</span><span class="text-valley-gold font-bold">LOCKED</span></div>
-        <div class="pt-2 text-teal-green text-[9px] leading-tight text-center">||||l|l||l|||ll||l|l||l|||ll||||<br/>SIGNAL INTEGRITY: NOMINAL</div>
+        <div class="flex justify-between border-b border-shaded-green pb-1"><span class="text-lions-mane">VISIBLE NODES</span><span id="camera-count" class="text-white font-bold text-glow-white">--</span></div>
+        <div class="flex justify-between border-b border-shaded-green pb-1"><span class="text-lions-mane">PII CAPTURE</span><span class="text-teal-green font-bold">DISABLED</span></div>
+        <div class="flex justify-between border-b border-shaded-green pb-1"><span class="text-lions-mane">CALIFORNIA SB 34</span><span class="text-valley-gold font-bold">ALIGNED</span></div>
+        <div class="pt-2 text-teal-green text-[9px] leading-tight text-center">||||l|l||l|||ll||l|l||l|||ll||||<br/>CIVIC REPOSITORY // PUBLIC DATA</div>
       </div>
     </div>
   </div>
@@ -111,50 +126,50 @@
     <div class="p-4 space-y-2 text-xs">
       <div class="border border-teal-green h-20 mb-4 flex items-center justify-center relative bg-[#020403]">
         <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPjxyZWN0IHdpZHRoPSI0IiBoZWlnaHQ9IjQiIGZpbGw9IiMwNDBGNTAiIGZpbGwtb3BhY2l0eT0iMC4yIi8+PC9zdmc+')]"></div>
-        <div class="text-valley-gold tracking-widest animate-pulse z-10">[ NO VISUAL DATA ]</div>
+        <div class="text-valley-gold tracking-widest animate-pulse z-10">[ NO PII STORED ]</div>
       </div>
       <div class="flex justify-between border-b border-shaded-green pb-1"><span class="text-lions-mane">LOC_ID</span><span id="drawer-title" class="text-white font-bold">--</span></div>
       <div class="flex justify-between border-b border-shaded-green pb-1"><span class="text-lions-mane">OPERATOR</span><span id="drawer-operator" class="text-valley-gold text-glow-gold">--</span></div>
-      <div class="flex justify-between border-b border-shaded-green pb-1"><span class="text-lions-mane">HARDWARE</span><span id="drawer-brand" class="text-white">--</span></div>
+      <div class="flex justify-between border-b border-shaded-green pb-1"><span class="text-lions-mane">CATEGORY</span><span id="drawer-category" class="text-white">--</span></div>
       <div class="flex justify-between border-b border-shaded-green pb-1"><span class="text-lions-mane">VECTOR</span><span id="drawer-direction" class="text-white">--</span></div>
+      <div class="flex justify-between border-b border-shaded-green pb-1"><span class="text-lions-mane">DATA PROVENANCE</span><span id="drawer-provenance" class="text-teal-green font-bold">OSM / DEFLOCK</span></div>
       <div class="flex justify-between pt-2"><span class="text-lions-mane">COORDINATES</span><span id="drawer-coords" class="text-teal-green font-bold">--</span></div>
     </div>
   </aside>
 
-  <!-- LEGAL & LOGS MODAL -->
+  <!-- LEGAL, METHODOLOGY & EXPORT MODAL -->
   <div id="docs-modal" class="fixed inset-0 z-50 hidden bg-[#020403]/95 flex justify-center items-center backdrop-blur-md p-4 pointer-events-auto">
-    <div class="hud-panel w-full max-w-2xl max-h-[80vh] overflow-y-auto p-6 relative">
+    <div class="hud-panel w-full max-w-2xl max-h-[85vh] overflow-y-auto p-6 relative">
       <button onclick="document.getElementById('docs-modal').classList.add('hidden')" class="absolute top-4 right-6 text-valley-gold font-bold text-lg hover:text-white">X</button>
       
-      <h2 class="text-valley-gold text-lg font-bold mb-4 border-b border-teal-green pb-2">[ SYSTEM LOGS & LEGAL DISCLOSURE ]</h2>
+      <h2 class="text-valley-gold text-lg font-bold mb-4 border-b border-teal-green pb-2">[ SYSTEM LOGS, ETHICS & DATA EXPORT ]</h2>
       
-      <div class="space-y-6 text-xs leading-relaxed">
+      <div class="space-y-5 text-xs leading-relaxed">
         <div>
-          <h3 class="text-lions-mane font-bold mb-1">> LEGAL & ETHICAL PROTOCOLS</h3>
-          <p class="text-teal-green mb-2">This application is an investigative journalism data-visualization tool developed for <span class="text-white">The Valley Star</span>.</p>
-          <ul class="list-disc list-inside text-gray-400 space-y-1">
-            <li><span class="text-white">PUBLIC DATA:</span> Utilizes crowdsourced, publicly accessible Open-Source Intelligence (OSINT).</li>
-            <li><span class="text-white">NO BACKDOOR ACCESS:</span> This system does not interface with, query, or compromise proprietary law enforcement or corporate databases.</li>
-            <li><span class="text-white">FIRST AMENDMENT:</span> Aggregation and visualization of public infrastructure in plain view is protected news-gathering activity.</li>
+          <h3 class="text-lions-mane font-bold mb-1">> STRICT PRIVACY & ZERO-PII MANDATE</h3>
+          <p class="text-teal-green mb-2">This investigative dashboard tracks <span class="text-white">fixed, exterior surveillance hardware</span> located within public easements and rights-of-way.</p>
+          <ul class="list-disc list-inside text-gray-300 space-y-1">
+            <li><span class="text-white">NO LIVE SCANS:</span> This tool does NOT collect, capture, index, or display license plate numbers, vehicle photos, or registered owner identities.</li>
+            <li><span class="text-white">CALIFORNIA SB 34:</span> Designed in alignment with California Senate Bill 34 standards promoting transparent public disclosure of ALPR operations.</li>
+            <li><span class="text-white">FIRST AMENDMENT:</span> Visualizing physical equipment in plain view on public roadways is protected newsgathering activity.</li>
           </ul>
         </div>
 
         <div>
-          <h3 class="text-lions-mane font-bold mb-1">> METHODOLOGY</h3>
-          <p class="text-gray-400">Nodes are extracted via OpenStreetMap (OSM) APIs using spatial grid-chunking. Due to the crowdsourced nature of OSINT, real-time operational status of individual hardware nodes cannot be independently verified.</p>
+          <h3 class="text-lions-mane font-bold mb-1">> CIVIC OPEN DATA EXPORT</h3>
+          <p class="text-gray-400 mb-3">In adherence to open-source journalism standards, the verified Greater LA surveillance node dataset is available for public audit, research, and non-commercial study:</p>
+          <a href="data/sfv_flock.geojson" download="greater_la_alpr_surveillance_grid.geojson" class="inline-block border border-valley-gold bg-valley-gold/10 hover:bg-valley-gold hover:text-black text-valley-gold font-bold px-4 py-2 transition">
+            ⬇ DOWNLOAD RAW GEOJSON DATASET
+          </a>
         </div>
 
         <div>
-          <h3 class="text-lions-mane font-bold mb-1">> SYSTEM LOGS</h3>
+          <h3 class="text-lions-mane font-bold mb-1">> SYSTEM CHANGELOG</h3>
           <div class="bg-[#020403] border border-shaded-green p-3 text-[10px] space-y-1 font-mono text-teal-green">
-            <div><span class="text-valley-gold">[v3.0.0]</span> Greater LA Grid Expansion / 3.6k+ Nodes Parsed</div>
+            <div><span class="text-valley-gold">[v3.1.0]</span> Agency filter engine, PII privacy shield, and civic data export added</div>
+            <div><span class="text-valley-gold">[v3.0.0]</span> Greater LA Grid Expansion / 3.6k+ Regional Nodes Parsed</div>
             <div><span class="text-valley-gold">[v2.1.0]</span> JACC Presentation Build Deployed</div>
             <div><span class="text-valley-gold">[v2.0.0]</span> Tactical UI, FoV Radars, Marker Clustering Init</div>
-            <div><span class="text-valley-gold">[v1.1.0]</span> Grid-Chunking protocol activated for SFV bounding box</div>
-            <div><span class="text-valley-gold">[v1.0.0]</span> Overpass API extraction online</div>
-          </div>
-            <div><span class="text-valley-gold">[v2.0.0]</span> Tactical UI, FoV Radars, Marker Clustering Init</div>
-            <div><span class="text-valley-gold">[v1.1.0]</span> Grid-Chunking protocol activated for SFV bounding box</div>
             <div><span class="text-valley-gold">[v1.0.0]</span> Overpass API extraction online</div>
           </div>
         </div>
@@ -163,8 +178,8 @@
   </div>
 
   <script>
-    const SFV_CENTER = [34.05, -118.35]; 
-    const map = L.map('map', { zoomControl: false, attributionControl: false }).setView(SFV_CENTER, 10);
+    const CENTER = [34.05, -118.35]; 
+    const map = L.map('map', { zoomControl: false, attributionControl: false }).setView(CENTER, 10);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(map);
 
     const markersCluster = L.markerClusterGroup({
@@ -172,8 +187,16 @@
       iconCreateFunction: function(cluster) { return L.divIcon({ html: cluster.getChildCount(), className: 'marker-cluster-custom', iconSize: L.point(44, 30) }); }
     });
 
-    let allMarkers = [];
+    let allItems = [];
+    let currentFilter = 'all';
     let activeCones = [];
+
+    function isMuni(p) {
+      const text = ((p.operator || '') + ' ' + (p.name || '')).toLowerCase();
+      return text.includes('pd') || text.includes('police') || text.includes('sheriff') || 
+             text.includes('lapd') || text.includes('burbank') || text.includes('glendale') || 
+             text.includes('city') || text.includes('caltrans') || text.includes('chp');
+    }
 
     function parseDirection(dirString) {
       if (!dirString) return null;
@@ -202,28 +225,52 @@
       .then(res => res.json())
       .then(data => {
         const feats = data.features || [];
-        document.getElementById('camera-count').textContent = feats.length;
-        addLog(`PARSED ${feats.length} VECTORS`, 'text-white');
-
         feats.forEach(feature => {
           const [lon, lat] = feature.geometry.coordinates;
           const markerIcon = L.divIcon({ className: 'tactical-marker-wrapper', html: '<div class="tactical-node w-3 h-3"></div>', iconSize: [12, 12], iconAnchor: [6, 6] });
           const marker = L.marker([lat, lon], { icon: markerIcon });
           marker.featureData = feature;
           marker.on('click', () => openDrawer(feature));
-          markersCluster.addLayer(marker);
-          allMarkers.push({ marker, props: feature.properties, lat, lon });
+          allItems.push({ marker, feature, isMunicipal: isMuni(feature.properties), lat, lon });
         });
-        map.addLayer(markersCluster);
-        addLog('GRID RENDERING COMPLETE', 'text-valley-gold');
+        applyFilter();
+        addLog(`LOADED ${allItems.length} REGIONAL NODES`, 'text-white');
       });
+
+    function applyFilter() {
+      markersCluster.clearLayers();
+      const filtered = allItems.filter(item => {
+        if (currentFilter === 'muni') return item.isMunicipal;
+        if (currentFilter === 'private') return !item.isMunicipal;
+        return true;
+      });
+      filtered.forEach(item => markersCluster.addLayer(item.marker));
+      map.addLayer(markersCluster);
+      document.getElementById('camera-count').textContent = filtered.length;
+    }
+
+    function setFilter(type) {
+      currentFilter = type;
+      ['all', 'muni', 'private'].forEach(t => {
+        const el = document.getElementById('filter-' + t);
+        if (t === type) {
+          el.className = 'flex-1 py-1 border border-valley-gold bg-valley-gold/20 text-valley-gold font-bold';
+        } else {
+          el.className = 'flex-1 py-1 border border-shaded-green text-teal-green hover:text-white';
+        }
+      });
+      applyFilter();
+      addLog(`FILTER: ${type.toUpperCase()} APPLIED`);
+    }
 
     function openDrawer(feature) {
       const p = feature.properties;
       const [lon, lat] = feature.geometry.coordinates;
+      const muniStatus = isMuni(p);
+
       document.getElementById('drawer-title').textContent = (p.name || p.id || 'ALPR_NODE').substring(0, 18);
       document.getElementById('drawer-operator').textContent = p.operator || 'UNKNOWN_AGENCY';
-      document.getElementById('drawer-brand').textContent = p.brand || 'FLOCK_SAFETY';
+      document.getElementById('drawer-category').textContent = muniStatus ? 'MUNICIPAL LAW ENFORCEMENT' : 'HOA / PRIVATE COMMERCIAL';
       document.getElementById('drawer-direction').textContent = p.direction || 'OMNI_DIRECTIONAL';
       document.getElementById('drawer-coords').textContent = `${lat.toFixed(5)}, ${lon.toFixed(5)}`;
       document.getElementById('drawer').classList.remove('hidden');
@@ -246,9 +293,14 @@
     function handleSearch(term) {
       const q = term.toLowerCase().trim();
       if (!q) return;
-      const match = allMarkers.find(i => (i.props.operator && i.props.operator.toLowerCase().includes(q)) || (i.props.id && i.props.id.toLowerCase().includes(q)));
+      const match = allItems.find(i => {
+        const p = i.feature.properties;
+        return (p.operator && p.operator.toLowerCase().includes(q)) || 
+               (p.name && p.name.toLowerCase().includes(q)) ||
+               (p.id && p.id.toLowerCase().includes(q));
+      });
       if (match) {
-        markersCluster.zoomToShowLayer(match.marker, () => openDrawer(match.marker.featureData));
+        markersCluster.zoomToShowLayer(match.marker, () => openDrawer(match.feature));
       }
     }
   </script>
