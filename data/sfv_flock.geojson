@@ -1,0 +1,3349 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3032477,
+          34.1714549
+        ]
+      },
+      "properties": {
+        "id": 11998104339,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3505514,
+          34.1962781
+        ]
+      },
+      "properties": {
+        "id": 12421324135,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "pole",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4681705,
+          34.1292178
+        ]
+      },
+      "properties": {
+        "id": 12646000722,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Bel-Air Association",
+        "brand": "Flock Safety",
+        "mount": "pole",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.361361,
+          34.1947479
+        ]
+      },
+      "properties": {
+        "id": 12951072710,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "pole",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3824924,
+          34.2010641
+        ]
+      },
+      "properties": {
+        "id": 12951086992,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "The Home Depot",
+        "brand": "Flock Safety",
+        "mount": "post",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3823758,
+          34.2010357
+        ]
+      },
+      "properties": {
+        "id": 12951086993,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "The Home Depot",
+        "brand": "Flock Safety",
+        "mount": "pole",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3705512,
+          34.1881355
+        ]
+      },
+      "properties": {
+        "id": 12951086994,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Target Corporation",
+        "brand": "Flock Safety",
+        "mount": "pole",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3721011,
+          34.1868999
+        ]
+      },
+      "properties": {
+        "id": 12951086995,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Target Corporation",
+        "brand": "Flock Safety",
+        "mount": "pole",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3496924,
+          34.1937115
+        ]
+      },
+      "properties": {
+        "id": 12951087225,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "pole",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3488691,
+          34.1750609
+        ]
+      },
+      "properties": {
+        "id": 12951087226,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3329045,
+          34.1917172
+        ]
+      },
+      "properties": {
+        "id": 12952443382,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "traffic_signal",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3332028,
+          34.1919029
+        ]
+      },
+      "properties": {
+        "id": 12952443383,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "traffic_signal",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3068379,
+          34.1676864
+        ]
+      },
+      "properties": {
+        "id": 12962085196,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3080136,
+          34.1669854
+        ]
+      },
+      "properties": {
+        "id": 12962085197,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3011889,
+          34.170288
+        ]
+      },
+      "properties": {
+        "id": 12962085198,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "The Home Depot",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3002322,
+          34.1695719
+        ]
+      },
+      "properties": {
+        "id": 12962085200,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "The Home Depot",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3573892,
+          34.1792283
+        ]
+      },
+      "properties": {
+        "id": 12967287525,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3259338,
+          34.1917256
+        ]
+      },
+      "properties": {
+        "id": 12983724947,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3256692,
+          34.1915188
+        ]
+      },
+      "properties": {
+        "id": 12983724948,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3166607,
+          34.1860315
+        ]
+      },
+      "properties": {
+        "id": 12983724949,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3072058,
+          34.1774482
+        ]
+      },
+      "properties": {
+        "id": 12983724950,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3833808,
+          34.2009094
+        ]
+      },
+      "properties": {
+        "id": 12983724951,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "The Home Depot",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3833458,
+          34.2010341
+        ]
+      },
+      "properties": {
+        "id": 12983724952,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "The Home Depot",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3459277,
+          34.1683489
+        ]
+      },
+      "properties": {
+        "id": 12988618381,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3460914,
+          34.1680832
+        ]
+      },
+      "properties": {
+        "id": 12988618382,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4478186,
+          34.2134824
+        ]
+      },
+      "properties": {
+        "id": 12996200219,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "The Home Depot",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4474615,
+          34.213236
+        ]
+      },
+      "properties": {
+        "id": 12996200220,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "The Home Depot",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4462657,
+          34.2130498
+        ]
+      },
+      "properties": {
+        "id": 12996200221,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "The Home Depot",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4463739,
+          34.2147619
+        ]
+      },
+      "properties": {
+        "id": 12996200222,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "The Home Depot",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4474942,
+          34.2143896
+        ]
+      },
+      "properties": {
+        "id": 12996200223,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "The Home Depot",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3525736,
+          34.1925818
+        ]
+      },
+      "properties": {
+        "id": 13006954564,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.336472,
+          34.1752086
+        ]
+      },
+      "properties": {
+        "id": 13012105136,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "pole",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3596483,
+          34.1850173
+        ]
+      },
+      "properties": {
+        "id": 13012105137,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3521959,
+          34.1930268
+        ]
+      },
+      "properties": {
+        "id": 13032145792,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3239456,
+          34.1558666
+        ]
+      },
+      "properties": {
+        "id": 13046451886,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3405151,
+          34.1528785
+        ]
+      },
+      "properties": {
+        "id": 13046451887,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3554596,
+          34.1730768
+        ]
+      },
+      "properties": {
+        "id": 13101125398,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3404237,
+          34.2062941
+        ]
+      },
+      "properties": {
+        "id": 13101153881,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3845205,
+          34.2008795
+        ]
+      },
+      "properties": {
+        "id": 13101183232,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "The Home Depot",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3486544,
+          34.2065602
+        ]
+      },
+      "properties": {
+        "id": 13101218108,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3216839,
+          34.1845383
+        ]
+      },
+      "properties": {
+        "id": 13113251070,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3338694,
+          34.1846449
+        ]
+      },
+      "properties": {
+        "id": 13113251071,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3186046,
+          34.1774808
+        ]
+      },
+      "properties": {
+        "id": 13113251072,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3166757,
+          34.1735127
+        ]
+      },
+      "properties": {
+        "id": 13158888254,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.345015,
+          34.1957202
+        ]
+      },
+      "properties": {
+        "id": 13158888255,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3490742,
+          34.1523204
+        ]
+      },
+      "properties": {
+        "id": 13163040556,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "pole",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3932134,
+          34.1435665
+        ]
+      },
+      "properties": {
+        "id": 13163059598,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Studio City Property & Business Improvement District",
+        "brand": "Flock Safety",
+        "mount": "pole",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3558693,
+          34.1690002
+        ]
+      },
+      "properties": {
+        "id": 13163086990,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "pole",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3906116,
+          34.1427778
+        ]
+      },
+      "properties": {
+        "id": 13179044848,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Studio City Property & Business Improvement District",
+        "brand": "Flock Safety",
+        "mount": "pole",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4063296,
+          34.143004
+        ]
+      },
+      "properties": {
+        "id": 13287841729,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Studio City Property & Business Improvement District",
+        "brand": "Flock Safety",
+        "mount": "pole",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3267067,
+          34.1550316
+        ]
+      },
+      "properties": {
+        "id": 13287864617,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "pole",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3346545,
+          34.156172
+        ]
+      },
+      "properties": {
+        "id": 13287875659,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "pole",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.341151,
+          34.1457731
+        ]
+      },
+      "properties": {
+        "id": 13323419800,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3545619,
+          34.1654567
+        ]
+      },
+      "properties": {
+        "id": 13323504987,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4883199,
+          34.1351758
+        ]
+      },
+      "properties": {
+        "id": 13332535401,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3241743,
+          34.1597045
+        ]
+      },
+      "properties": {
+        "id": 13332966940,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3023242,
+          34.1804953
+        ]
+      },
+      "properties": {
+        "id": 13333003413,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Burbank",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3211838,
+          34.1842986
+        ]
+      },
+      "properties": {
+        "id": 13410147474,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3217385,
+          34.1840247
+        ]
+      },
+      "properties": {
+        "id": 13410167202,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4345948,
+          34.1576321
+        ]
+      },
+      "properties": {
+        "id": 13544584001,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.327068,
+          34.1982366
+        ]
+      },
+      "properties": {
+        "id": 13556308401,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3619883,
+          34.2005541
+        ]
+      },
+      "properties": {
+        "id": 13570425730,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4331074,
+          34.157446
+        ]
+      },
+      "properties": {
+        "id": 13594275901,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "pole",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3502893,
+          34.1992315
+        ]
+      },
+      "properties": {
+        "id": 13606912301,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.312075,
+          34.17976
+        ]
+      },
+      "properties": {
+        "id": 13615570501,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4211908,
+          34.1433239
+        ]
+      },
+      "properties": {
+        "id": 13683348201,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4238395,
+          34.1426198
+        ]
+      },
+      "properties": {
+        "id": 13690111201,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3040308,
+          34.1638154
+        ]
+      },
+      "properties": {
+        "id": 13721124601,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "street_lamp",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3680522,
+          34.201084
+        ]
+      },
+      "properties": {
+        "id": 13729047627,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3711774,
+          34.1796196
+        ]
+      },
+      "properties": {
+        "id": 13735392802,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.420291,
+          34.1416879
+        ]
+      },
+      "properties": {
+        "id": 13750307102,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4763989,
+          34.1501441
+        ]
+      },
+      "properties": {
+        "id": 13753096701,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3496314,
+          34.1846529
+        ]
+      },
+      "properties": {
+        "id": 13753703237,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3637626,
+          34.1939345
+        ]
+      },
+      "properties": {
+        "id": 13762470001,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3565543,
+          34.154064
+        ]
+      },
+      "properties": {
+        "id": 13764360001,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3557854,
+          34.1541032
+        ]
+      },
+      "properties": {
+        "id": 13764360701,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3516576,
+          34.1352879
+        ]
+      },
+      "properties": {
+        "id": 13785906980,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3516191,
+          34.1360568
+        ]
+      },
+      "properties": {
+        "id": 13785906981,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3516674,
+          34.1361537
+        ]
+      },
+      "properties": {
+        "id": 13785941247,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3550194,
+          34.1558681
+        ]
+      },
+      "properties": {
+        "id": 13805190601,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3550167,
+          34.157206
+        ]
+      },
+      "properties": {
+        "id": 13805191902,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.451114,
+          34.1677446
+        ]
+      },
+      "properties": {
+        "id": 13915271701,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "building",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4512238,
+          34.1698487
+        ]
+      },
+      "properties": {
+        "id": 13915273601,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "building",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4528713,
+          34.1687514
+        ]
+      },
+      "properties": {
+        "id": 13915274801,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4715278,
+          34.1828425
+        ]
+      },
+      "properties": {
+        "id": 13915276201,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4743751,
+          34.1858453
+        ]
+      },
+      "properties": {
+        "id": 13915276701,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3383161,
+          34.1982749
+        ]
+      },
+      "properties": {
+        "id": 13920990601,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4007753,
+          34.1509312
+        ]
+      },
+      "properties": {
+        "id": 13932188601,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3692905,
+          34.164476
+        ]
+      },
+      "properties": {
+        "id": 13967271201,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3393625,
+          34.1519598
+        ]
+      },
+      "properties": {
+        "id": 14005509301,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3022697,
+          34.1968967
+        ]
+      },
+      "properties": {
+        "id": 14015821501,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3048497,
+          34.1995507
+        ]
+      },
+      "properties": {
+        "id": 14018544801,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3559532,
+          34.1613373
+        ]
+      },
+      "properties": {
+        "id": 14031974802,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3658462,
+          34.2013071
+        ]
+      },
+      "properties": {
+        "id": 14047710401,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "WET",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3588887,
+          34.1558946
+        ]
+      },
+      "properties": {
+        "id": 14062889401,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4850115,
+          34.2348045
+        ]
+      },
+      "properties": {
+        "id": 14071133502,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4850133,
+          34.2349095
+        ]
+      },
+      "properties": {
+        "id": 14071144501,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3507422,
+          34.2066949
+        ]
+      },
+      "properties": {
+        "id": 14075822501,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "traffic_signals",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3363723,
+          34.1755914
+        ]
+      },
+      "properties": {
+        "id": 14086528802,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3486643,
+          34.1713492
+        ]
+      },
+      "properties": {
+        "id": 14086528903,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3565675,
+          34.1726006
+        ]
+      },
+      "properties": {
+        "id": 14086528904,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4837145,
+          34.2213427
+        ]
+      },
+      "properties": {
+        "id": 14088336501,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4672461,
+          34.2216586
+        ]
+      },
+      "properties": {
+        "id": 14088700922,
+        "name": "LVT trailer",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4664577,
+          34.2009796
+        ]
+      },
+      "properties": {
+        "id": 14088720537,
+        "name": "LVT trailer",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3570663,
+          34.1534527
+        ]
+      },
+      "properties": {
+        "id": 14092784101,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "pole",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4664104,
+          34.1514692
+        ]
+      },
+      "properties": {
+        "id": 14095104172,
+        "name": "LVT trailer",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3614351,
+          34.153965
+        ]
+      },
+      "properties": {
+        "id": 14100030601,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "pole",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.32213,
+          34.1683855
+        ]
+      },
+      "properties": {
+        "id": 14104336801,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3240505,
+          34.188173
+        ]
+      },
+      "properties": {
+        "id": 14104471301,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.368083,
+          34.2012357
+        ]
+      },
+      "properties": {
+        "id": 14127655502,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4213864,
+          34.1453516
+        ]
+      },
+      "properties": {
+        "id": 14140995702,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.411866,
+          34.212552
+        ]
+      },
+      "properties": {
+        "id": 14143125501,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3448764,
+          34.153563
+        ]
+      },
+      "properties": {
+        "id": 14143692123,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3295437,
+          34.1611493
+        ]
+      },
+      "properties": {
+        "id": 14167890901,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3281209,
+          34.158203
+        ]
+      },
+      "properties": {
+        "id": 14167891801,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3383385,
+          34.1807291
+        ]
+      },
+      "properties": {
+        "id": 14181969332,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4634789,
+          34.1594563
+        ]
+      },
+      "properties": {
+        "id": 14220504501,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4836537,
+          34.186151
+        ]
+      },
+      "properties": {
+        "id": 14220505301,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3791868,
+          34.2173382
+        ]
+      },
+      "properties": {
+        "id": 14252973501,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3791841,
+          34.2168344
+        ]
+      },
+      "properties": {
+        "id": 14252975401,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4189398,
+          34.2643927
+        ]
+      },
+      "properties": {
+        "id": 122767507,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4256681,
+          34.2738901
+        ]
+      },
+      "properties": {
+        "id": 12996229074,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Lowe's",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.425992,
+          34.2732496
+        ]
+      },
+      "properties": {
+        "id": 13125766933,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Lowe's",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4175685,
+          34.2952367
+        ]
+      },
+      "properties": {
+        "id": 13125949583,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "The Home Depo",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4174681,
+          34.2944882
+        ]
+      },
+      "properties": {
+        "id": 13358782888,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "The Home Depo",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4178684,
+          34.2941468
+        ]
+      },
+      "properties": {
+        "id": 13358782889,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "The Home Depo",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4408153,
+          34.2835543
+        ]
+      },
+      "properties": {
+        "id": 13406746372,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4412214,
+          34.2834935
+        ]
+      },
+      "properties": {
+        "id": 13406746373,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4373592,
+          34.2798984
+        ]
+      },
+      "properties": {
+        "id": 13410062976,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4166815,
+          34.2945975
+        ]
+      },
+      "properties": {
+        "id": 13410129463,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "The Home Depo",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4394578,
+          34.2821818
+        ]
+      },
+      "properties": {
+        "id": 13410137908,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4403476,
+          34.2815609
+        ]
+      },
+      "properties": {
+        "id": 13410142899,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4489937,
+          34.2905762
+        ]
+      },
+      "properties": {
+        "id": 13410147013,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4422575,
+          34.2848354
+        ]
+      },
+      "properties": {
+        "id": 13410147712,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4422504,
+          34.2845276
+        ]
+      },
+      "properties": {
+        "id": 13410147713,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4492176,
+          34.2907319
+        ]
+      },
+      "properties": {
+        "id": 13410150527,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4492873,
+          34.2903965
+        ]
+      },
+      "properties": {
+        "id": 13410150528,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.449427,
+          34.2902016
+        ]
+      },
+      "properties": {
+        "id": 13410150529,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4301564,
+          34.2913478
+        ]
+      },
+      "properties": {
+        "id": 13410219767,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4303822,
+          34.2914829
+        ]
+      },
+      "properties": {
+        "id": 13410219768,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.430335,
+          34.2911223
+        ]
+      },
+      "properties": {
+        "id": 13410219769,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4311867,
+          34.2908384
+        ]
+      },
+      "properties": {
+        "id": 13410219770,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4386663,
+          34.2988683
+        ]
+      },
+      "properties": {
+        "id": 13410227245,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4386291,
+          34.299084
+        ]
+      },
+      "properties": {
+        "id": 13410227246,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4243407,
+          34.2857577
+        ]
+      },
+      "properties": {
+        "id": 13410234812,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4243376,
+          34.2854561
+        ]
+      },
+      "properties": {
+        "id": 13410234813,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4493065,
+          34.2794601
+        ]
+      },
+      "properties": {
+        "id": 13523146301,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "street_lamp",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.465968,
+          34.2573816
+        ]
+      },
+      "properties": {
+        "id": 13639857601,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4659708,
+          34.2591352
+        ]
+      },
+      "properties": {
+        "id": 13639859901,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4667623,
+          34.2591446
+        ]
+      },
+      "properties": {
+        "id": 13639900601,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4670324,
+          34.2585726
+        ]
+      },
+      "properties": {
+        "id": 13639902401,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4668291,
+          34.2578469
+        ]
+      },
+      "properties": {
+        "id": 13639905301,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4464554,
+          34.2766308
+        ]
+      },
+      "properties": {
+        "id": 13671057501,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4466083,
+          34.2768113
+        ]
+      },
+      "properties": {
+        "id": 13671060802,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4495689,
+          34.2794331
+        ]
+      },
+      "properties": {
+        "id": 13671101501,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4518001,
+          34.2818241
+        ]
+      },
+      "properties": {
+        "id": 13671114401,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4273601,
+          34.2830452
+        ]
+      },
+      "properties": {
+        "id": 13673370201,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4236546,
+          34.2961048
+        ]
+      },
+      "properties": {
+        "id": 13673523101,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4374211,
+          34.2801771
+        ]
+      },
+      "properties": {
+        "id": 13673658402,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4180078,
+          34.2904215
+        ]
+      },
+      "properties": {
+        "id": 13674290702,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4449507,
+          34.2939127
+        ]
+      },
+      "properties": {
+        "id": 13676227101,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4412774,
+          34.2959468
+        ]
+      },
+      "properties": {
+        "id": 13676240701,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4388046,
+          34.2823638
+        ]
+      },
+      "properties": {
+        "id": 13685654693,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4231875,
+          34.273292
+        ]
+      },
+      "properties": {
+        "id": 13690220801,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4243476,
+          34.2726581
+        ]
+      },
+      "properties": {
+        "id": 13704736301,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4248945,
+          34.2720449
+        ]
+      },
+      "properties": {
+        "id": 13704739101,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.441437,
+          34.296009
+        ]
+      },
+      "properties": {
+        "id": 13762173101,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4270993,
+          34.2828299
+        ]
+      },
+      "properties": {
+        "id": 13762255701,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4764576,
+          34.2717824
+        ]
+      },
+      "properties": {
+        "id": 14029370386,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4833718,
+          34.235452
+        ]
+      },
+      "properties": {
+        "id": 14071131301,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4842426,
+          34.2354639
+        ]
+      },
+      "properties": {
+        "id": 14071137501,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4829784,
+          34.2351179
+        ]
+      },
+      "properties": {
+        "id": 14071148401,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4448274,
+          34.2868322
+        ]
+      },
+      "properties": {
+        "id": 14099925501,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4449199,
+          34.2866987
+        ]
+      },
+      "properties": {
+        "id": 14099925701,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3061961,
+          34.2594675
+        ]
+      },
+      "properties": {
+        "id": 14106462601,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.41182,
+          34.2748184
+        ]
+      },
+      "properties": {
+        "id": 14111550201,
+        "name": "Fixed ALPR Checkpoint",
+        "operator": "Regional Agency / HOA",
+        "brand": "Flock Safety",
+        "mount": "Utility Pole / Mast",
+        "direction": "Roadway Facing",
+        "verified": "OpenStreetMap / DeFlock"
+      }
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Valley Star | Tactical ALPR HUD</title>
+
+  <!-- Leaflet CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  
+  <!-- Leaflet MarkerCluster -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  
+  <!-- Leaflet SemiCircle (FoV Cones) -->
+  <script src="https://cdn.jsdelivr.net/npm/leaflet-semicircle@2.0.4/Semicircle.min.js"></script>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'valley-green': '#20680C',
+            'valley-gold': '#FCB926',
+            'monarch-green': '#00513F',
+            'teal-green': '#307F6A',
+            'shaded-green': '#2F3F3A',
+            'metallic-gold': '#B3A268',
+            'lions-mane': '#FFE2A5',
+            'obsidian': '#040605',
+            'panel-bg': 'rgba(4, 6, 5, 0.90)'
+          },
+          fontFamily: { mono: ['Courier New', 'Courier', 'monospace'] }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* BASE SETUP */
+    body { 
+      background-color: #000000; 
+      color: #ffffff; 
+      font-family: 'Courier New', Courier, monospace;
+      text-transform: uppercase;
+      overflow: hidden;
+      margin: 0;
+    }
+    #map { height: 100vh; width: 100%; z-index: 1; background-color: #000000; }
+
+    /* HIGH-DETAIL TACTICAL DARK FILTER FOR OSM */
+    .leaflet-tile-pane {
+      /* Inverts the map to black, keeps water blue/parks green, desaturates, and boosts contrast for crisp text */
+      filter: invert(100%) hue-rotate(180deg) brightness(85%) contrast(130%) grayscale(75%);
+    }
+
+    /* SUBTLE CRT SCANLINES (Haze removed) */
+    .scanlines {
+      position: fixed; inset: 0; pointer-events: none; z-index: 9999;
+      background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.10) 50%, rgba(0,0,0,0.10));
+      background-size: 100% 4px;
+    }
+
+    /* TACTICAL PANELS */
+    .hud-panel {
+      background: rgba(4, 6, 5, 0.92);
+      border: 1px solid #307F6A;
+      box-shadow: 0 0 10px rgba(48, 127, 106, 0.3), inset 0 0 15px rgba(0, 81, 63, 0.4);
+      backdrop-filter: blur(8px);
+    }
+    .hud-header {
+      border-bottom: 1px solid #307F6A;
+      background: rgba(0, 81, 63, 0.8);
+      color: #FFE2A5;
+      padding: 4px 8px;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    /* GLOWING TRACKING MARKERS */
+    .tactical-node {
+      background-color: #FCB926;
+      border: 1px solid #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #FCB926, 0 0 20px #FCB926;
+      position: relative;
+    }
+    .tactical-node::after {
+      content: '';
+      position: absolute; top: -6px; left: -6px; right: -6px; bottom: -6px;
+      border: 1px solid rgba(252, 185, 36, 0.8);
+      border-radius: 50%;
+      animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    }
+    @keyframes pulse-ring {
+      0% { transform: scale(0.8); opacity: 1; }
+      100% { transform: scale(2.5); opacity: 0; }
+    }
+
+    /* CLUSTER STYLING */
+    .marker-cluster-custom {
+      background-color: rgba(4, 6, 5, 0.9);
+      border: 1px solid #FCB926;
+      color: #ffffff;
+      display: flex; justify-content: center; align-items: center;
+      box-shadow: 0 0 15px rgba(252, 185, 36, 0.5);
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .marker-cluster-custom::before {
+      content: '['; position: absolute; left: 6px; color: #FFE2A5;
+    }
+    .marker-cluster-custom::after {
+      content: ']'; position: absolute; right: 6px; color: #FFE2A5;
+    }
+
+    /* TYPOGRAPHY */
+    .text-glow-gold { text-shadow: 0 0 8px rgba(252, 185, 36, 0.8); }
+    .text-glow-white { text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); }
+    .blink { animation: blinker 1s steps(2, start) infinite; }
+    @keyframes blinker { to { visibility: hidden; } }
+
+    /* HIDE LEAFLET UI */
+    .leaflet-control-zoom { display: none; }
+  </style>
+</head>
+<body class="relative">
+
+  <!-- LIGHT SCANLINES (Vignette Removed) -->
+  <div class="scanlines"></div>
+
+  <div id="map"></div>
+
+  <!-- TOP LEFT BRANDING & SEARCH -->
+  <div class="absolute top-6 left-6 z-30 pointer-events-none flex flex-col gap-4">
+    <div class="hud-panel pointer-events-auto p-3 w-80">
+      <div class="flex justify-between items-end mb-2 border-b border-shaded-green pb-2">
+        <div>
+          <div class="text-[10px] text-lions-mane">SYS.OP // JAMES ARCHER</div>
+          <div class="text-sm font-bold text-white text-glow-white">VALLEY STAR ALPR NETWORK</div>
+        </div>
+        <div class="text-[9px] text-valley-gold blink">[ REC ]</div>
+      </div>
+      <div class="flex items-center text-xs text-white">
+        <span class="text-teal-green mr-2">></span>
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="ENTER TARGET VECTOR..." 
+          class="w-full bg-transparent placeholder-teal-green focus:outline-none"
+          oninput="handleSearch(this.value)"
+        />
+      </div>
+    </div>
+
+    <!-- TERMINAL SCROLLING LOG -->
+    <div class="hud-panel pointer-events-auto w-80 h-32 flex flex-col hidden md:flex">
+      <div class="hud-header flex justify-between">
+        <span>[ NETWORK COMMS ]</span>
+        <span class="text-teal-green">UPLINK</span>
+      </div>
+      <div class="p-2 text-[9px] text-teal-green overflow-hidden flex-1 relative" id="terminal-log">
+        <div class="absolute bottom-2 left-2 right-2 space-y-1" id="log-content">
+          <div class="text-lions-mane">> INIT SECURE CONNECTION...</div>
+          <div>> ESTABLISHING HANDSHAKE... OK</div>
+          <div>> DECRYPTING GEOJSON PAYLOAD...</div>
+          <div class="text-valley-gold blink">> AWAITING TELEMETRY...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOP RIGHT TELEMETRY -->
+  <div class="absolute top-6 right-6 z-30 pointer-events-none hidden md:block">
+    <div class="hud-panel pointer-events-auto w-64">
+      <div class="hud-header flex justify-between">
+        <span>[ GRID TELEMETRY ]</span>
+        <span class="text-valley-gold">[ - ]</span>
+      </div>
+      <div class="p-3 text-[11px] space-y-2">
+        <div class="flex justify-between border-b border-shaded-green pb-1">
+          <span class="text-lions-mane">ACTIVE SENSORS</span>
+          <span id="camera-count" class="text-white font-bold text-glow-white">--</span>
+        </div>
+        <div class="flex justify-between border-b border-shaded-green pb-1">
+          <span class="text-lions-mane">ENCRYPTION</span>
+          <span class="text-white">AES-256</span>
+        </div>
+        <div class="flex justify-between border-b border-shaded-green pb-1">
+          <span class="text-lions-mane">SAT LINK</span>
+          <span class="text-valley-gold font-bold">LOCKED</span>
+        </div>
+        
+        <!-- Retro Radar Waveform -->
+        <div class="pt-2 text-teal-green text-[9px] leading-tight text-center">
+          ||||l|l||l|||ll||l|l||l|||ll||||<br/>
+          SIGNAL INTEGRITY: NOMINAL
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TARGET DETAILS DRAWER -->
+  <aside id="drawer" class="absolute bottom-8 right-8 z-30 w-[340px] hud-panel hidden pointer-events-auto">
+    <div class="hud-header flex justify-between items-center">
+      <span>[ TARGET IDENTIFICATION ]</span>
+      <button onclick="closeDrawer()" class="text-valley-gold hover:text-white transition text-sm font-bold">X</button>
+    </div>
+    
+    <div class="p-4 space-y-2 text-xs">
+      <!-- Target Image Box -->
+      <div class="border border-teal-green h-20 mb-4 flex items-center justify-center relative bg-[#020403]">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPjxyZWN0IHdpZHRoPSI0IiBoZWlnaHQ9IjQiIGZpbGw9IiMwNDBGNTAiIGZpbGwtb3BhY2l0eT0iMC4yIi8+PC9zdmc+')]"></div>
+        <div class="text-valley-gold tracking-widest animate-pulse z-10">[ NO VISUAL DATA ]</div>
+      </div>
+
+      <div class="flex justify-between border-b border-shaded-green pb-1">
+        <span class="text-lions-mane">LOC_ID</span>
+        <span id="drawer-title" class="text-white font-bold">--</span>
+      </div>
+      <div class="flex justify-between border-b border-shaded-green pb-1">
+        <span class="text-lions-mane">OPERATOR</span>
+        <span id="drawer-operator" class="text-valley-gold text-glow-gold">--</span>
+      </div>
+      <div class="flex justify-between border-b border-shaded-green pb-1">
+        <span class="text-lions-mane">HARDWARE</span>
+        <span id="drawer-brand" class="text-white">--</span>
+      </div>
+      <div class="flex justify-between border-b border-shaded-green pb-1">
+        <span class="text-lions-mane">VECTOR</span>
+        <span id="drawer-direction" class="text-white">--</span>
+      </div>
+      <div class="flex justify-between pt-2">
+        <span class="text-lions-mane">COORDINATES</span>
+        <span id="drawer-coords" class="text-teal-green font-bold">--</span>
+      </div>
+    </div>
+  </aside>
+
+  <script>
+    const SFV_CENTER = [34.2000, -118.4900]; 
+    const map = L.map('map', { 
+      zoomControl: false,
+      attributionControl: false
+    }).setView(SFV_CENTER, 12);
+
+    // High-Detail OpenStreetMap Engine (No blurring, scales natively to zoom 19)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19
+    }).addTo(map);
+
+    const markersCluster = L.markerClusterGroup({
+      maxClusterRadius: 45,
+      iconCreateFunction: function(cluster) {
+        return L.divIcon({ 
+          html: cluster.getChildCount(), 
+          className: 'marker-cluster-custom', 
+          iconSize: L.point(44, 30) 
+        });
+      }
+    });
+
+    let allMarkers = [];
+    let cameraFeatures = [];
+    let activeCones = [];
+
+    function parseDirection(dirString) {
+      if (!dirString) return null;
+      const d = dirString.toLowerCase();
+      if (d.includes('north') || d === 'n') return 0;
+      if (d.includes('northeast') || d === 'ne') return 45;
+      if (d.includes('east') || d === 'e') return 90;
+      if (d.includes('southeast') || d === 'se') return 135;
+      if (d.includes('south') || d === 's') return 180;
+      if (d.includes('southwest') || d === 'sw') return 225;
+      if (d.includes('west') || d === 'w') return 270;
+      if (d.includes('northwest') || d === 'nw') return 315;
+      return null;
+    }
+
+    function addLog(msg, colorClass = "text-teal-green") {
+      const log = document.getElementById('log-content');
+      const div = document.createElement('div');
+      div.className = colorClass;
+      div.textContent = `> ${msg}`;
+      log.appendChild(div);
+      if (log.children.length > 5) log.removeChild(log.firstChild);
+    }
+
+    fetch('data/sfv_flock.geojson?t=' + new Date().getTime())
+      .then(res => res.json())
+      .then(data => {
+        cameraFeatures = data.features || [];
+        document.getElementById('camera-count').textContent = cameraFeatures.length;
+        addLog(`PARSED ${cameraFeatures.length} VECTORS`, 'text-white');
+
+        cameraFeatures.forEach(feature => {
+          const [lon, lat] = feature.geometry.coordinates;
+          const props = feature.properties;
+
+          const markerIcon = L.divIcon({
+            className: 'tactical-marker-wrapper',
+            html: '<div class="tactical-node w-3 h-3"></div>',
+            iconSize: [12, 12],
+            iconAnchor: [6, 6]
+          });
+
+          const marker = L.marker([lat, lon], { icon: markerIcon });
+          marker.featureData = feature;
+
+          marker.on('click', () => openDrawer(feature));
+          markersCluster.addLayer(marker);
+          allMarkers.push({ marker, props, lat, lon });
+        });
+        
+        map.addLayer(markersCluster);
+        addLog('GRID RENDERING COMPLETE', 'text-valley-gold');
+      })
+      .catch(err => {
+        console.error("Error loading GEOJSON:", err);
+        addLog('ERR: TELEMETRY FAIL', 'text-red-500');
+      });
+
+    function openDrawer(feature) {
+      const p = feature.properties;
+      const [lon, lat] = feature.geometry.coordinates;
+
+      document.getElementById('drawer-title').textContent = (p.name || p.id || 'ALPR_NODE').substring(0, 18);
+      document.getElementById('drawer-operator').textContent = p.operator || 'UNKNOWN_AGENCY';
+      document.getElementById('drawer-brand').textContent = p.brand || 'FLOCK_SAFETY';
+      document.getElementById('drawer-direction').textContent = p.direction || 'OMNI_DIRECTIONAL';
+      document.getElementById('drawer-coords').textContent = `${lat.toFixed(5)}, ${lon.toFixed(5)}`;
+
+      document.getElementById('drawer').classList.remove('hidden');
+      addLog(`TRACKING: ${lat.toFixed(2)} ${lon.toFixed(2)}`, 'text-lions-mane');
+      
+      activeCones.forEach(c => map.removeLayer(c));
+      activeCones = [];
+
+      const angle = parseDirection(p.direction);
+      if (angle !== null) {
+        const cone = L.semiCircle([lat, lon], {
+          radius: 150,
+          color: '#FCB926',
+          weight: 1,
+          fillColor: '#FFE2A5',
+          fillOpacity: 0.15,
+          startAngle: angle - 30,
+          stopAngle: angle + 30
+        }).addTo(map);
+        activeCones.push(cone);
+      }
+
+      map.flyTo([lat, lon], 17, { duration: 0.8 });
+    }
+
+    function closeDrawer() {
+      document.getElementById('drawer').classList.add('hidden');
+      activeCones.forEach(c => map.removeLayer(c));
+      activeCones = [];
+      addLog('TARGET LOCK CLEARED');
+    }
+
+    function handleSearch(term) {
+      const q = term.toLowerCase().trim();
+      if (!q) return;
+
+      const match = allMarkers.find(item => 
+        (item.props.operator && item.props.operator.toLowerCase().includes(q)) ||
+        (item.props.id && item.props.id.toLowerCase().includes(q))
+      );
+
+      if (match) {
+        addLog(`SEARCH MATCH: ${match.props.operator || 'NODE'}`, 'text-valley-gold');
+        markersCluster.zoomToShowLayer(match.marker, function () {
+          openDrawer(match.marker.featureData);
+        });
+      }
+    }
+  </script>
+</body>
+</html>
