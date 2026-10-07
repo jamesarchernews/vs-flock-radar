@@ -2,7 +2,7 @@
 
 **Developed by:** James Atlas Archer | Online Editor, The Valley Star  
 **Project Output:** OSINT Tactical HUD / ALPR Tracking Dashboard  
-**Presented At:** Journalism Association of Community Colleges (JACC) SoCal Conference 2026
+**Presented At:** (TBD)
 
 ## 🗄️ Project Overview
 This interactive data journalism tool maps the proliferation of Automated License Plate Readers (ALPRs) across Greater Los Angeles. Built to support investigative reporting for *The Valley Star*, the dashboard utilizes a custom tactical UI to visualize surveillance density, hardware types, and operator telemetry.
