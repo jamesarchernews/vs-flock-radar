@@ -158,8 +158,8 @@
   </div>
 
   <script>
-    const SFV_CENTER = [34.2000, -118.4900]; 
-    const map = L.map('map', { zoomControl: false, attributionControl: false }).setView(SFV_CENTER, 12);
+    const SFV_CENTER = [34.05, -118.35]; 
+    const map = L.map('map', { zoomControl: false, attributionControl: false }).setView(SFV_CENTER, 10);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(map);
 
     const markersCluster = L.markerClusterGroup({
