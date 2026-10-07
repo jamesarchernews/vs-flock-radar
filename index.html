@@ -49,8 +49,6 @@
     .marker-cluster-custom::after { content: ']'; position: absolute; right: 6px; color: #FFE2A5; }
     .text-glow-gold { text-shadow: 0 0 8px rgba(252, 185, 36, 0.8); }
     .text-glow-white { text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); }
-    .blink { animation: blinker 1s steps(2, start) infinite; }
-    @keyframes blinker { to { visibility: hidden; } }
     .leaflet-control-zoom { display: none; }
   </style>
 </head>
@@ -67,7 +65,6 @@
           <div class="text-[10px] text-lions-mane">SYS.OP // JAMES ARCHER</div>
           <div class="text-sm font-bold text-white text-glow-white">VALLEY STAR ALPR NETWORK</div>
         </div>
-        <div class="text-[9px] text-valley-gold blink">[ REC ]</div>
       </div>
       
       <!-- SEARCH INPUT -->
@@ -93,18 +90,6 @@
         </a>
       </div>
     </div>
-
-    <!-- TERMINAL SCROLLING LOG -->
-    <div class="hud-panel pointer-events-auto w-84 h-28 flex flex-col hidden md:flex">
-      <div class="hud-header flex justify-between"><span>[ NETWORK COMMS ]</span><span class="text-teal-green">UPLINK</span></div>
-      <div class="p-2 text-[9px] text-teal-green overflow-hidden flex-1 relative" id="terminal-log">
-        <div class="absolute bottom-2 left-2 right-2 space-y-1" id="log-content">
-          <div class="text-lions-mane">> PRIVACY SHIELD: ACTIVE (ZERO PII)</div>
-          <div>> CA SB 34 AUDIT SPEC: COMPLIANT</div>
-          <div class="text-valley-gold blink">> REALTIME GRID ACTIVE...</div>
-        </div>
-      </div>
-    </div>
   </div>
 
   <!-- TOP RIGHT TELEMETRY -->
@@ -112,10 +97,8 @@
     <div class="hud-panel pointer-events-auto w-64">
       <div class="hud-header flex justify-between"><span>[ GRID TELEMETRY ]</span><span class="text-valley-gold">[ - ]</span></div>
       <div class="p-3 text-[11px] space-y-2">
-        <div class="flex justify-between border-b border-shaded-green pb-1"><span class="text-lions-mane">VISIBLE NODES</span><span id="camera-count" class="text-white font-bold text-glow-white">--</span></div>
-        <div class="flex justify-between border-b border-shaded-green pb-1"><span class="text-lions-mane">PII CAPTURE</span><span class="text-teal-green font-bold">DISABLED</span></div>
-        <div class="flex justify-between border-b border-shaded-green pb-1"><span class="text-lions-mane">CALIFORNIA SB 34</span><span class="text-valley-gold font-bold">ALIGNED</span></div>
-        <div class="pt-2 text-teal-green text-[9px] leading-tight text-center">||||l|l||l|||ll||l|l||l|||ll||||<br/>CIVIC REPOSITORY // PUBLIC DATA</div>
+        <div class="flex justify-between pb-1"><span class="text-lions-mane">VISIBLE NODES</span><span id="camera-count" class="text-white font-bold text-glow-white">--</span></div>
+        <div class="pt-1 border-t border-shaded-green text-teal-green text-[9px] leading-tight text-center">||||l|l||l|||ll||l|l||l|||ll||||<br/>CIVIC REPOSITORY // PUBLIC DATA</div>
       </div>
     </div>
   </div>
@@ -212,15 +195,6 @@
       return null;
     }
 
-    function addLog(msg, colorClass = "text-teal-green") {
-      const log = document.getElementById('log-content');
-      const div = document.createElement('div');
-      div.className = colorClass;
-      div.textContent = `> ${msg}`;
-      log.appendChild(div);
-      if (log.children.length > 5) log.removeChild(log.firstChild);
-    }
-
     fetch('data/sfv_flock.geojson?t=' + new Date().getTime())
       .then(res => res.json())
       .then(data => {
@@ -234,7 +208,6 @@
           allItems.push({ marker, feature, isMunicipal: isMuni(feature.properties), lat, lon });
         });
         applyFilter();
-        addLog(`LOADED ${allItems.length} REGIONAL NODES`, 'text-white');
       });
 
     function applyFilter() {
@@ -260,7 +233,6 @@
         }
       });
       applyFilter();
-      addLog(`FILTER: ${type.toUpperCase()} APPLIED`);
     }
 
     function openDrawer(feature) {
